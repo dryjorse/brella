@@ -1,0 +1,423 @@
+.menu
+    height: 90px
+    padding: 35px 0 25px
+    
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__ul
+        display: flex
+        gap: 53px
+        list-style-type: none
+
+    &__link
+        line-height: 20px
+        font-weight: 700
+        color: #214E41
+        text-decoration: none
+
+    @media (max-width: 1024px)
+        .nav
+            display: none
+
+        
+
+.home
+    height: calc(100vh - 90px)
+    background: #DEDCCF url('../images/home/image-home.jpg') no-repeat center
+    background-size: cover
+
+    &__inner
+        padding-top: 160px
+
+        h1
+            max-width: 516px
+
+        span
+            display: inline-block
+            margin: 40px 0 15px
+            font-size: 16px
+            line-height: 24px
+            font-weight: 700
+            color: #214E41
+
+    &__search
+        display: flex
+
+    &__input
+        padding: 20px 88px 20px 20px
+        border: none
+        border-radius: 6px 0px 0px 6px
+
+        &::placeholder
+            color: black
+            font-weight: 700
+            line-height: 20px
+
+    &__button
+        padding: 20px 35px
+        border-radius: 0px 6px 6px 0px
+
+    @media (max-width: 768px)
+        padding: 63px 0 57px
+        height: auto
+        background: #43806C
+
+        &__inner
+            padding: 0
+        
+        &__button
+            background: #DDDBCE
+            color: #214E41
+
+    @media (max-width: 520px)
+        h1
+            color: white
+
+        &__input
+            padding: 15px
+            flex: 1 1 100%
+
+        &__button
+            padding: 15px
+            white-space: nowrap    
+
+.info
+    margin-top: -85px
+
+    &__inner
+        display: flex
+        justify-content: space-between
+        padding: 50px
+        background-color: #ffffff
+        box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6)
+        border-radius: 6px
+
+    &__item
+        display: flex
+        gap: 10px
+
+        .content
+            width: 274px
+        
+        h5
+            margin-bottom: 7px
+            font-size: 16px
+            font-weight: 400
+            line-height: 24px
+        span
+            line-height: 20px
+
+    @media (max-width: 1200px)
+        margin: 0
+        padding: 50px
+        
+        &__inner
+            box-shadow: none
+            flex-direction: column
+            gap: 4px
+            padding: 0
+
+        &__item
+            background: #F6ECDD
+            border-radius: 8px
+            padding: 11px 0 11px 20px
+            gap: 25px
+            
+            img
+                width: 45px
+
+    @media (max-width: 768px)
+        padding: 20px 0 58px
+
+        &__item
+            align-items: center
+
+            h5
+                font-size: 16px
+                line-height: 24px
+                color: #214E41
+
+            span
+                display: none
+
+.deductible
+    padding-top: 35px
+    
+    &__body
+        display: flex
+        justify-content: space-between
+
+    &__inner1
+        flex: 0 1 510px
+
+    &__line
+        flex: 0 0 1px
+        background: #C7C7C75E
+        align-self: stretch
+
+    @media (max-width: 1200px)
+        &__body
+            flex-direction: column
+            gap: 60px
+
+        &__inner
+            display: none
+
+        &__inner1
+            max-width: 1000px
+            flex: 0 1 auto
+            
+
+.issues
+    padding: 120px 0
+
+    &__body
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    
+    &__inner1
+        flex: 0 1 556px
+
+        .descr
+            margin: 0
+
+    &__box
+        display: flex
+        justify-content: space-between
+        margin-top: 60px
+
+        .box
+            flex: 0 1 260px
+
+            .descr__two
+                font-size: 13px
+                line-height: 22px
+                color: #214E41
+                font-weight: bold
+                margin-top: 12px
+
+            &:hover .issues__number
+                transform: scale(1.2)
+
+    &__number
+        display: inline-block
+        font-size: 60px
+        line-height: 78px
+        color:#F0A446
+        margin-top: 12px
+        text-transform: uppercase
+        font-family: 'Roboto'
+        transition: 0.3s
+        transform-origin: left top
+
+    @media (max-width: 1200px)
+        padding: 60px 0
+
+        &__inner
+            display: none
+
+        &__inner1
+            flex: 0 1 1000px
+
+    @media (max-width: 1048px)
+        &__box
+            margin-top: 40px
+            flex-direction: column
+            gap: 22px
+
+            .box
+                flex: 0 1 auto
+
+        &__number
+            margin: 0
+
+.easy
+    background: url("../images/easy/woman.jpg") center
+    background-size: cover 
+    height: 522px
+    display: flex
+    align-items: center
+
+    &__inner
+        max-width: 490px
+
+    @media (max-width: 768px)
+        .descr
+            color: white
+
+.proudly
+    padding-top: 130px
+
+    .container 
+        border-bottom: 1px solid #C7C7C7
+        padding-bottom: 130px
+
+    .title
+        text-align: center
+
+    &__img
+        display: flex
+        justify-content: space-between
+        margin-top: 110px
+
+    @media (max-width: 1024px)
+        padding-top: 60px
+
+        .container
+            border: none
+            padding: 0
+
+        &__img
+            margin-top: 36px
+            flex-direction: column
+            align-items: center
+            gap: 30px
+            
+            img
+                width: fit-content
+
+.posts
+    padding: 129px 0
+
+    &__inner
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+        .card
+            flex: 0 1 355px
+            
+            &__span
+                display: inline-block
+                font-size: 11px
+                text-transform: uppercase
+                color: #43806C
+                line-height: 18px
+                margin: 20px 0 15px
+
+            &__title
+                color: #214E41
+                font-size: 20px
+                line-height: 26px
+
+            img 
+                width: 100%
+
+    @media (max-width: 1200px)
+        padding: 60px 0
+
+        &__inner
+            gap: 33px
+
+            .card
+                max-width: 320px
+
+                img 
+                    display: block
+
+    @media (max-width: 1024px)
+        &__inner
+            justify-content: center
+
+.footer
+    background-color: #214E41
+    padding: 64px 0
+    color: white
+
+    &__inner
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+    &__left
+        display: flex
+        gap: 110px
+
+        .list__tittle
+            font-size: 13px
+            line-height: 24px
+            text-transform: uppercase
+
+        ul
+            list-style-type: none
+
+        li
+            margin-top: 15px
+
+        a
+            font-size: 16px
+            text-decoration: none
+            line-height: 27px
+            color: white
+
+    &__right
+        flex: 0 1 355px
+
+    .form
+        
+        &__span
+            font-size: 13px
+            line-height: 29px
+            text-transform: uppercase
+
+        &__descr
+            line-height: 24px
+            margin: 20px 0 15px
+
+        &__value
+            display: flex
+
+        input[type=email]
+            padding: 14px 0 14px 21px
+            background-color: inherit
+            border: 1px white solid
+            outline: none
+            flex: 0 1 100%
+            color: white
+
+        ::-webkit-input-placeholder
+            color: white
+
+        &__send
+            padding: 18px
+            border: none
+            cursor: pointer
+
+    .social
+        margin-top: 32px
+        display: flex
+        gap: 25px
+    
+    &__bottom
+        flex: 0 1 100%
+        margin-top: 87px
+        display: flex
+        justify-content: space-between
+        border-top: 1px solid white
+        padding-top: 16px
+        
+    &__end
+        display: flex
+        gap: 10px
+
+        a 
+            color: white
+            text-decoration: none   
+            white-space: nowrap
+
+    &__line
+        flex: 0 0 1px
+        background-color: white
+
+    @media (max-width: 948px)
+        &__list
+            display: none
+
+        &__right
+            margin-top: 35px
+
+    
